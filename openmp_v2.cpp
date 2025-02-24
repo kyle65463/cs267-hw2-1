@@ -87,7 +87,7 @@ inline void move(particle_t& p, double size) {
 
 void init_simulation(particle_t* parts, int num_parts, double size) {
     // Initialize Grid
-    grid.cell_size = cutoff * 2;
+    grid.cell_size = cutoff * 2.5;
     grid.nx = (int)(size / grid.cell_size) + 1;
     grid.ny = (int)(size / grid.cell_size) + 1;
 
